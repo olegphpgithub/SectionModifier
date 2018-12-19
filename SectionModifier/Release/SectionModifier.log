@@ -1,0 +1,10 @@
+﻿  SectionModifier.cpp
+SectionModifier.cpp(218): warning C4101: 'header': unreferenced local variable
+SectionModifier.cpp(219): warning C4101: 'opHeader': unreferenced local variable
+  Generating code
+  1 of 169 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SectionModifier.vcxproj -> D:\Code\SectionModifier\Release\SectionModifier.exe
+  SectionModifier.vcxproj -> D:\Code\SectionModifier\Release\SectionModifier.pdb (Full PDB)

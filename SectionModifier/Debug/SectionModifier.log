@@ -1,0 +1,5 @@
+﻿  SectionModifier.cpp
+d:\code\sectionmodifier\sectionmodifier\sectionmodifier.cpp(65): warning C4101: 'header': unreferenced local variable
+d:\code\sectionmodifier\sectionmodifier\sectionmodifier.cpp(66): warning C4101: 'opHeader': unreferenced local variable
+  SectionModifier.vcxproj -> D:\Code\SectionModifier\Debug\SectionModifier.exe
+  SectionModifier.vcxproj -> D:\Code\SectionModifier\Debug\SectionModifier.pdb (Full PDB)
