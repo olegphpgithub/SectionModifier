@@ -8,7 +8,7 @@
 //#define FOR_EXE
 //#define FOR_DLL
 //#define FOR_AVIRA_EXE
-#define FOR_AVIRA_DLL
+#define FOR_01_TEST
 
 #ifdef FOR_AVIRA_EXE
 void ChangeName(int sectionNumber, char* name)
@@ -103,6 +103,58 @@ void ChangeName(int sectionNumber, char* name)
 	}
 }
 #endif
+
+
+#ifdef FOR_01_TEST
+void ChangeName(int sectionNumber, char* name)
+{
+	CString newName(name);
+	CString oldName(name);
+
+	switch (sectionNumber)
+	{
+	case 0:
+		newName = ".text";
+		break;
+	case 1:
+		newName = ".rdata";
+		break;
+	case 2:
+		newName = ".data";
+		break;
+	case 3:
+		newName = ".qtmetad";
+		break;
+	case 4:
+		newName = ".tls";
+		break;
+	case 5:
+		newName = ".gfids";
+		break;
+	case 6:
+		newName = "_RDATA";
+		break;
+	case 7:
+		newName = ".rsrc";
+		break;
+	case 8:
+		newName = ".reloc";
+		break;
+	default:
+		newName = "";
+		break;
+	}
+
+	for (int i = 0; i < 8; i++)
+	{
+		if (i < newName.GetLength())
+			name[i] = newName[i];
+		else
+			name[i] = '\0';
+	}
+}
+#endif
+
 
 #ifdef FOR_AVIRA_DLL
 void ChangeName(int sectionNumber, char* name)
